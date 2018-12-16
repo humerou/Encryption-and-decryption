@@ -1,30 +1,33 @@
-// ÒëÂëÆ÷.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// è¯‘ç å™¨.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
 
+//ç¼–è¾‘åŠ å¯†å‡½æ•°create()
+
 void creat(char txt[])
 {
-	printf("ÇëÊäÈëÄãÏë¼ÓÃÜµÄÊı¾İ!\n");
+	printf("è¯·è¾“å…¥ä½ æƒ³åŠ å¯†çš„æ•°æ®!\n");
     gets(txt);
 
-	for(int i=0;i<strlen(txt);i++)
+	for(int i = 0;i < strlen(txt);i++)
 	{
 		txt[i]+=1245;
 	}
 
-	printf("¼ÓÃÜ½á¹û£º%s\n",txt);
+	printf("åŠ å¯†ç»“æœï¼š%s\n",txt);
 	
 }
+//ç¼–è¾‘è§£å¯†å‡½æ•°
 void tans(char txt[])
 {
-	printf("ÇëÊäÈëÄãÏë½âÃÜµÄÊı¾İ!\n");
+	printf("è¯·è¾“å…¥ä½ æƒ³è§£å¯†çš„æ•°æ®!\n");
     gets(txt);
-	for(int i=0;i<strlen(txt);i++)
+	for(int i = 0;i < strlen(txt);i++)
 	{
 		txt[i]-=1245;
 	}
-	printf("½âÃÜ½á¹û£º%s\n",txt);
+	printf("è§£å¯†ç»“æœï¼š%s\n",txt);
 
 }
 int _tmain(int argc, _TCHAR* argv[])
@@ -34,11 +37,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	printf("****************************************************\n");
-	printf("»¶Ó­Ê¹ÓÃÒëÂëÆ÷£¡\n");
+	printf("æ¬¢è¿ä½¿ç”¨è¯‘ç å™¨ï¼\n");
 	printf("****************************************************\n");
-	printf("Èç¹ûÄãÏë¼ÓÃÜÎÄ×ÖÇëÊäÈë1£¡\n");
-    printf("Èç¹ûÄãÏë½âÃÜÎÄ×ÖÇëÊäÈë2£¡\n");
-	printf("ÍË³öÇëÊäÈë0\n");
+	printf("å¦‚æœä½ æƒ³åŠ å¯†æ–‡å­—è¯·è¾“å…¥1ï¼\n");
+    printf("å¦‚æœä½ æƒ³è§£å¯†æ–‡å­—è¯·è¾“å…¥2ï¼\n");
+	printf("é€€å‡ºè¯·è¾“å…¥0\n");
 	scanf("%d",&chois);
 	fflush(stdin);
 	while(1)
@@ -52,11 +55,11 @@ int _tmain(int argc, _TCHAR* argv[])
 			tans(txt);
 			break;
 		case 0:
-			printf("ÍË³ö³É¹¦£¡\n");
+			printf("é€€å‡ºæˆåŠŸï¼\n");
 			exit(0);
 			break;
 		default:
-			printf("ÄúµÄÊäÈëÓĞÎó£¡\n");
+			printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯ï¼\n");
 			break;
 		}
 		system("pause");
